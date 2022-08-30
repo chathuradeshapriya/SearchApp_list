@@ -18,7 +18,14 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         appBar: AppBar(
           title: Text('UserList'),
-
+          actions: [
+            IconButton(
+              onPressed: () {
+                // showSearch(context: context, delegate: SearchUser());
+              },
+              icon: Icon(Icons.search_sharp),
+            )
+          ],
         ),
         body: Container(
           padding: EdgeInsets.all(20),
